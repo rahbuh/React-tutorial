@@ -2,6 +2,10 @@ import React from "react";
 import ContactCard from "./components/ContactCards";
 import contactData from "./contactData";
 
+class MyApp extends React.Component {
+
+}
+
 const App = () => {
   const contactComponents = contactData.map(contact => {
     return (
