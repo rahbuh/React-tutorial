@@ -5,14 +5,15 @@ import contactData from "./contactData";
 const App = () => {
   const contactComponents = contactData.map(contact => {
     return (
-      <ContactCard 
-      key={contact.id} 
-      name={contact.name} 
-      imgUrl={contact.imgUrl} 
-      imgAlt={contact.imgAlt}
-      phone={contact.phone}
-      email={contact.email} />
-    )
+      <ContactCard
+        key={contact.id}
+        name={contact.name}
+        imgUrl={contact.imgUrl}
+        imgAlt={contact.imgAlt}
+        phone={contact.phone}
+        email={contact.email}
+      />
+    );
   });
 
   return (
@@ -33,7 +34,7 @@ const App = () => {
           email: "mr.whiskaz@catnap.meow"
         }}
       /> OBJECT PROPS */}
-      
+
       {contactComponents}
     </div>
   );
