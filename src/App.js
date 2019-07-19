@@ -6,13 +6,7 @@ class App extends Component {
   render() {
     const contactComponents = contactData.map(contact => {
       return (
-        <ContactCard 
-        key={contact.id} 
-        name={contact.name} 
-        imgUrl={contact.imgUrl} 
-        imgAlt={contact.imgAlt}
-        phone={contact.phone}
-        email={contact.email} />
+        <ContactCard contact={contact} />
       )
     });
 
