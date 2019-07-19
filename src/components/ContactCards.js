@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 
-const ContactCard = ({contact: {imgUrl, imgAlt, name, phone, email}}) => {
-    return (
-        <div className="contact-card">
-            <img src={imgUrl} alt={imgAlt}/>
-            <h3>{name}</h3>
-            <p>Phone: {phone}</p>
-            <p>Email: {email}</p>
-        </div>
-    )
-}
+const ContactCard = ({ contact: { imgUrl, imgAlt, name, phone, email } }) => {
+  return (
+    <div className="contact-card">
+      <img src={imgUrl} alt={imgAlt} />
+      <h3>{name}</h3>
+      <p>Phone: {phone}</p>
+      <p>Email: {email}</p>
+    </div>
+  );
+};
 
 // class ContactCard extends Component {
 //     render() {
