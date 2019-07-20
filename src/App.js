@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ContactCards from "./components/ContactCards";
+import ContactCard from "./components/ContactCard";
 import contactData from "./contactData";
 
 class App extends Component {
@@ -14,7 +14,7 @@ class App extends Component {
   render() {
     const contacts = this.state.contacts;
     const contactInfo = contacts.map(contact => (
-      <ContactCards key={contact.id} contact={contact} />
+      <ContactCard key={contact.id} contact={contact} />
     ));
 
     return <div className={"contacts"}>{contactInfo}</div>;

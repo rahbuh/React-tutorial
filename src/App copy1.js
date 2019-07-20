@@ -1,5 +1,5 @@
 import React from "react";
-import ContactCard from "./components/ContactCards";
+import ContactCard from "./components/ContactCard";
 import contactData from "./contactData";
 
 const App = () => {

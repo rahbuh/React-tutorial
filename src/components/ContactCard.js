@@ -1,6 +1,6 @@
 import React from "react";
 
-function ContactCards({contact: {name, imgUrl, imgAlt, phone, email}}) {
+function ContactCard({contact: {name, imgUrl, imgAlt, phone, email}}) {
   return (
     <div className={'contact-card'}>
       <img src={imgUrl} alt={imgAlt} />
@@ -11,4 +11,4 @@ function ContactCards({contact: {name, imgUrl, imgAlt, phone, email}}) {
   );
 }
 
-export default ContactCards;
+export default ContactCard;
