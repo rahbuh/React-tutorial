@@ -10,8 +10,11 @@ import React, { Component } from "react";
 //     </div>
 //   );
 // };
-
 class ContactCard extends Component {
+  componentDidMount() {
+    console.log('Success')
+  }
+
   render() {
     const { imgUrl, imgAlt, name, phone, email } = this.props.contact;
 
